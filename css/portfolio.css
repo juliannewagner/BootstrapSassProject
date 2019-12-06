@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Catamaran|Crete+Round&display=swap");
 * {
   box-sizing: inherit;
   margin: 0;
@@ -5,38 +6,151 @@
 }
 
 html {
-  font-family: "Segoe UI", "Roboto", "Helvetica Neue";
+  font-family: "Catamaran", sans-serif;
   line-height: 1.5;
 }
 
-.nav-item {
-  padding: 0 1rem;
+.nav {
+  font-family: "Catamaran", sans-serif;
 }
 
-.jumbotron {
-  background-image: url(https://picsum.photos/id/16/2500/1667);
+.navbar {
+  background-color: #9cbde7;
+  position: relative;
+  border: 0.2rem inset #999999;
 }
 
-.navbar-brand {
-  size: 1.5rem;
+.nav-link {
+  border: 0.2rem inset #999999;
+}
+
+.nav-link:hover {
+  background-color: #2a5365;
   color: #e6e6e6;
 }
 
-.avatar {
-  width: 40px;
-  height: 40px;
-  border-radius: 100%;
+.jumbotron {
+  background-color: #6fa2dc;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  border: 0.2rem inset #999999;
 }
 
-.html, .css, .javascript, .python, .sass, .github {
-  width: 50px;
-  height: 50px;
-  border-radius: 100%;
+.display-3 {
+  font-size: 3.5rem;
+  color: #2a5365;
+  font-family: "Crete Round", serif;
+  font-weight: 500;
+  padding: 2rem;
+}
+
+.avatar {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  box-shadow: 0.2rem 0.4rem 1rem 0.2rem #999999;
+}
+
+.avatar:hover {
+  transform: translate(1rem) rotate(0deg);
+  transition: transform 0.2s ease-out;
+}
+
+.h3 {
+  display: flex;
+  justify-content: center;
+  font-family: "Crete Round", serif;
+  border-bottom-style: double;
+  border-color: #9cbde7;
+  color: #2a5365;
+}
+
+.card {
+  display: flex;
+  padding: 1rem 2rem;
+  margin: 1rem 2rem;
+  background-color: #9cbde7;
+  border: 0.2rem inset #999999;
+}
+@media screen and (max-width: 360px) {
+  .card {
+    width: 100px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .card {
+    width: 100px;
+    float: right;
+  }
+}
+
+.card:hover {
+  background-color: #6fa2dc;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-family: "Crete Round", serif;
+  display: flex;
+  justify-content: center;
+  color: #2a5365;
+}
+
+.card-body {
+  font-family: "Catamaran", sans-serif;
+  font-size: 1rem;
+}
+
+.html {
+  width: 70px;
+  height: 70px;
+  align-self: center;
+}
+
+.css, .javascript, .python, .sass, .github {
+  width: 60px;
+  height: 60px;
+  align-self: center;
 }
 
 .media {
   margin: 1rem 1rem;
   padding: 1rem 1rem;
+}
+
+.media-body {
+  border: 1rem outset #9cbde7;
+  padding: 1rem 1rem;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 1rem;
+  background-color: #2a5365;
+  color: #999999;
+}
+
+.card-img-top {
+  width: 100%;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+}
+
+.form-group {
+  padding: 1rem 2rem;
+  margin: 1rem 2rem;
+  font-family: "Catamaran", sans-serif;
+  border: 0.5rem ridge #2a5365;
+}
+
+.btn {
+  margin: 1rem 2rem;
 }
 
 /*# sourceMappingURL=portfolio.css.map */
