@@ -7,50 +7,47 @@
 
 html {
   font-family: "Catamaran", sans-serif;
-  line-height: 1.5;
 }
 
-.nav {
-  font-family: "Catamaran", sans-serif;
-}
-
-.navbar {
+nav {
   background-color: #9cbde7;
   position: relative;
-  border: 0.2rem inset #999999;
+  border: 0.2rem inset #6fa2dc;
 }
-
-.nav-link {
-  border: 0.2rem inset #999999;
+nav ul {
+  font-family: "Catamaran", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  border: 0.2rem inset #6fa2dc;
 }
 
 .nav-link:hover {
-  background-color: #2a5365;
+  background-color: #3b47c9;
   color: #e6e6e6;
 }
 
 .jumbotron {
-  background-color: #6fa2dc;
+  background: linear-gradient(#6fa2dc, #9cbde7);
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
-  border: 0.2rem inset #999999;
+  border: 0.2rem inset #9cbde7;
 }
 
-.display-3 {
-  font-size: 3.5rem;
-  color: #2a5365;
+header h1 {
+  color: #3b47c9;
   font-family: "Crete Round", serif;
-  font-weight: 500;
   padding: 2rem;
 }
 
 .avatar {
-  width: 130px;
-  height: 130px;
+  width: 175px;
+  height: 190px;
   border-radius: 50%;
-  box-shadow: 0.2rem 0.4rem 1rem 0.2rem #999999;
+  border: 0.1rem solid #979de2;
 }
 
 .avatar:hover {
@@ -58,61 +55,52 @@ html {
   transition: transform 0.2s ease-out;
 }
 
-.h3 {
+main .h3 {
   display: flex;
   justify-content: center;
   font-family: "Crete Round", serif;
   border-bottom-style: double;
   border-color: #9cbde7;
-  color: #2a5365;
+  color: #3b47c9;
 }
-
-.card {
-  display: flex;
-  padding: 1rem 2rem;
-  margin: 1rem 2rem;
-  background-color: #9cbde7;
-  border: 0.2rem inset #999999;
-}
-@media screen and (max-width: 360px) {
-  .card {
-    width: 100px;
-  }
-}
-@media screen and (min-width: 600px) {
-  .card {
-    width: 100px;
-    float: right;
-  }
-}
-
-.card:hover {
-  background-color: #6fa2dc;
-}
-
-.card-title {
-  font-size: 1.5rem;
+main h5 {
   font-family: "Crete Round", serif;
+  color: #e6e6e6;
+}
+
+.list-group {
+  padding: 1rem 6rem;
+  margin: 1rem 2rem;
+}
+
+.list-group-item {
+  background: linear-gradient(#3b47c9, #6fa2dc);
+  font-family: "Catamaran", sans-serif;
+  color: #e6e6e6;
+}
+
+.mb-1 {
+  font-size: 1.5rem;
+  color: #e6e6e6;
   display: flex;
   justify-content: center;
-  color: #2a5365;
 }
 
-.card-body {
-  font-family: "Catamaran", sans-serif;
-  font-size: 1rem;
+.d-flex {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .html {
   width: 70px;
   height: 70px;
-  align-self: center;
 }
 
 .css, .javascript, .python, .sass, .github {
   width: 60px;
   height: 60px;
-  align-self: center;
+  padding: 0 1rem;
 }
 
 .media {
@@ -125,28 +113,69 @@ html {
   padding: 1rem 1rem;
 }
 
+/* page 2 */
+.card {
+  display: flex;
+  justify-content: center;
+  border-radius: 0;
+  padding: 0 2rem;
+  margin: 0rem 2rem;
+  background-color: #9cbde7;
+}
+
+.card:hover {
+  background-color: #6fa2dc;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-family: "Crete Round", serif;
+  display: flex;
+  justify-content: center;
+  color: #3b47c9;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Catamaran", sans-serif;
+  font-size: 1rem;
+}
+
 .card-footer {
   display: flex;
   justify-content: flex-start;
   margin-top: 1rem;
-  background-color: #2a5365;
+  background-color: #3b47c9;
   color: #999999;
 }
 
 .card-img-top {
-  width: 100%;
+  width: 26rem;
+  height: 20rem;
+}
+
+/* third page */
+form .form-group {
+  color: #e6e6e6;
+  padding: 1rem 1rem 2rem 1rem;
+  margin: 1rem 2rem;
+  font-family: "Catamaran", sans-serif;
+  border: 0.5rem ridge #3b47c9;
+  background-color: #979de2;
+}
+form .form-control {
+  color: #e6e6e6;
+  padding: 0 0 1rem;
+  background: linear-gradient(#e6e6e6, #9cbde7);
 }
 
 .btn {
+  font-size: 1rem;
   display: flex;
   justify-content: center;
-}
-
-.form-group {
-  padding: 1rem 2rem;
-  margin: 1rem 2rem;
-  font-family: "Catamaran", sans-serif;
-  border: 0.5rem ridge #2a5365;
+  background-color: #3b47c9;
 }
 
 .btn {

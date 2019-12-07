@@ -5,100 +5,106 @@
   margin: 0;
   padding: 0;
 }
+
 html {
   font-family: $font-family-sans-serif;
-  line-height: 1.5;
 }
-
-.nav {
-  font-family: $font-family-sans-serif;
-}
-
-.navbar{
+nav {
   background-color: $primaryLighterBlue;
   position: relative;
-  border: 0.2rem inset $colorGreyTwo;
+  border: .2rem inset $primaryBlue;
+  ul {
+    font-family: $font-family-sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    border: .2rem inset $primaryBlue;
+  }
 }
-.nav-link {
-  border: 0.2rem inset $colorGreyTwo;
-}
+
 .nav-link:hover {
   background-color: $secondaryPurple;
   color: $colorGreyThree;
 }
+
 .jumbotron {
-background-color: $primaryBlue;
+background: linear-gradient($primaryBlue, $primaryLighterBlue);
 display: flex;
 flex-direction: row-reverse;
 justify-content: center;
 align-items: center;
-border: 0.2rem inset $colorGreyTwo;
+border: 0.2rem inset $primaryLighterBlue;
 }
 
-.display-3 {
-  font-size: $headerFontSize;
-  color: $secondaryPurple;
-  font-family: $font-family-serif;
-  font-weight: 500;
-  padding: 2rem;
+header {
+  h1 {
+    color: $secondaryPurple;
+    font-family: $font-family-serif;
+    padding: 2rem;
+  }
 }
+
 .avatar {
-    width: 130px;
-    height: 130px;
+    width: 175px;
+    height: 190px;
     border-radius: 50%;
-    box-shadow: 0.2rem 0.4rem 1rem .2rem $colorGreyTwo;
+    border: .1rem solid $secondaryPurpleTwo;
 }
+
 .avatar:hover {
   transform: translate(1rem) rotate(0deg);
   transition: transform 0.2s ease-out;
+
 }
-.h3 {
-  display: flex;
-  justify-content: center;
-  font-family: $font-family-serif;
-  border-bottom-style: double;
-  border-color: $primaryLighterBlue;
-  color: $secondaryPurple;
+
+
+main {
+  .h3 {
+    display: flex;
+    justify-content: center;
+    font-family: $font-family-serif;
+    border-bottom-style: double;
+    border-color: $primaryLighterBlue;
+    color: $secondaryPurple;
+  }
+  h5 {
+      font-family: $font-family-serif;
+      color: $colorGreyThree;
+    }
   }
 
-.card {
-  display: flex;
-  padding: 1rem 2rem;
+.list-group {
+  padding: 1rem 6rem;
   margin: 1rem 2rem;
-  background-color: $primaryLighterBlue;
-  border: 0.2rem inset $colorGreyTwo;
-  @media screen and (max-width: $page-small) {
-    width: 100px;
-  }
-  @media screen and (min-width: $page-medium) {
-    width: 100px;
-    float: right;
-  }
 }
-.card:hover {
-  background-color: $primaryBlue;
-}
-.card-title {
-  font-size: $hFontSize;
-  font-family: $font-family-serif;
-  display: flex;
-justify-content: center;
-color: $secondaryPurple;
-}
-.card-body {
+
+.list-group-item {
+  background: linear-gradient($secondaryPurple, $primaryBlue);
   font-family: $font-family-sans-serif;
-  font-size: $pFontSize;
+  color: $colorGreyThree;
+}
+
+.mb-1 {
+  font-size: $hFontSize;
+  color: $colorGreyThree;
+  display: flex;
+  justify-content: center;
+}
+.d-flex {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 .html {
   width: 70px;
   height: 70px;
-  align-self: center;
 }
-  .css, .javascript, .python, .sass, .github {
-    width: 60px;
-    height: 60px;
-    align-self: center;
-  }
+.css, .javascript, .python, .sass, .github {
+  width: 60px;
+  height: 60px;
+  padding: 0 1rem;
+}
 
   .media {
     margin: 1rem 1rem;
@@ -110,6 +116,34 @@ color: $secondaryPurple;
   padding: 1rem 1rem;
 }
 
+/* page 2 */
+
+
+.card {
+  display: flex;
+  justify-content: center;
+  border-radius: 0;
+  padding: 0 2rem;
+  margin: 0rem 2rem;
+  background-color: $primaryLighterBlue;
+}
+.card:hover {
+  background-color: $primaryBlue;
+}
+.card-title {
+  font-size: $hFontSize;
+  font-family: $font-family-serif;
+  display: flex;
+  justify-content: center;
+  color: $secondaryPurple;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: $font-family-sans-serif;
+  font-size: $pFontSize;
+}
 
 .card-footer {
 display: flex;
@@ -120,20 +154,36 @@ color: $colorGreyTwo;
 }
 
 .card-img-top {
-width: 100%;
+width: 26rem;
+height: 20rem;
 }
 
-.btn {
-  display: flex;
-justify-content: center;
-}
 
-.form-group {
-  padding: 1rem 2rem;
+/* third page */
+
+form {
+  .form-group {
+    color: $colorGreyThree;
+  padding: 1rem 1rem 2rem 1rem;
   margin: 1rem 2rem;
   font-family: $font-family-sans-serif;
   border: .5rem ridge $secondaryPurple;
+  background-color: $secondaryPurpleTwo;
+  }
+  .form-control {
+    color: $colorGreyThree;
+    padding: 0 0 1rem;
+    background: linear-gradient($colorGreyThree, $primaryLighterBlue);
+  }
 }
+
+.btn {
+  font-size: $pFontSize;
+display: flex;
+justify-content: center;
+background-color: $secondaryPurple;
+}
+
 
 .btn {
   margin: 1rem 2rem;
