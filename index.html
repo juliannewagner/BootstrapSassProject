@@ -2,113 +2,164 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
-    <title>Project 2</title>
-    <link rel="stylesheet" href="./css/portfolio.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Julianne Wagner</title>
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
 </head>
 
 <body>
-    <nav class="navbar">
-        <ul class="nav justify-content-center">
-            <li class="nav-item">
-                <a class="nav-link active" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="page2.html">Portfolio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="formPage3.html">Contact</a>
-            </li>
-        </ul>
-    </nav>
-    <header>
-        <div class="jumbotron">
-            <h1 class="display-3">Julianne Wagner</h1>
-            <img class="avatar" src="img/me.jpg">
-        </div>
-    </header>
-    <main>
-        <h3 class="h3">Web Technologies</h3>
+  <!-- Menu Area Start-->
+  <nav class="navbar navbar-expand-md navbar-dark sticky-top">
+    <a class="navbar-brand" href="#">
+      <img src="./img/logo.png" alt="Logo" />
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="portfolio.html">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact page</a>
+        </li>
+      </ul>
 
-        <div class="list-group">
-            <div class="list-group-item list-group-item-action flex-column align-items-start">
-                <div class="d-flex">
-                    <img src="img/HTML5_1Color_Black.png" class="html">
-                    <h5 class="mb-1">HTML</h5>
-
-                </div>
-                <p class="mb-2">HTML is a scripting language for creating the base of every web page. With HTML,
-                    you can implement stlye within the HTML file or directly reference a CSS file.
-                    Also, JavaScript can be included to add dynamic aspects for a webpage.</small>
-            </div>
-            <div class="list-group-item list-group-item-action flex-column align-items-start">
-                <div class="d-flex">
-                    <img src="img/css-3.png" class="css">
-                    <h5 class="mb-1">CSS</h5>
-
-                </div>
-                <p class="mb-2">CSS or cascading style sheets is a language to design HTML content. CSS is the
-                    presentation to the user of the HTML content. CSS can either be directly referenced in an HTML file
-                    with a style tag or imported with an external file tag in the
-                    HTML file. </p>
-            </div>
-            <div class="list-group-item list-group-item-action flex-column align-items-start">
-                <div class="d-flex">
-                    <img src="img/javascript.png" class="javascript">
-                    <h5 class="mb-1">JavaScript</h5>
-                </div>
-                <p class="mb-2">JavaScript is a programming language that is used with HTML to create dynamic aspects of
-                    a webpage. JavaScript can add animation, and interactive properties to an HTML page. JavaScript can also be used to change or revise HTML and CSS content.</p>
-            </div>
-            <div class="list-group-item list-group-item-action flex-column align-items-start">
-                <div class="d-flex">
-                    <img src="img/python.png" class="python">
-                    <h5 class="mb-1">Python</h5>
-                </div>
-                <p class="mb-2">Python is a high level programming language. Python is mostly used for data
-                    manipulation, creating websites, and web or mobile applications. Python is popular due to the simple
-                    syntax, leading more beginner programmers to learn Python and make amazing applications.</p>
-            </div>
-            <div class="list-group-item list-group-item-action flex-column align-items-start">
-                <div class="d-flex">
-                    <img src="img/sass.png" class="sass">
-                    <h5 class="mb-1">SASS</h5>
-                </div>
-                <p class="mb-2">SASS is a CSS pre-processor. It is used to write a stlye sheet for HTML content in SASS
-                    and then transformed into CSS before it is rendered by a browswer. SASS is powerful due to extended
-                    features like variables, nested rules, or mixins. These features allow compling CSS much easier and
-                    more effienctly.</p>
-            </div>
-            <div class="list-group-item list-group-item-action flex-column align-items-start">
-                <div class="d-flex">
-                    <img src="img/github-logo.png" class="github">
-                    <h5 class="mb-1">GitHub</h5>
-                </div>
-                <p class="mb-2">GitHub is an online code storing, sharing, or posting website. GitHub can be used with
-                    Git, a version control system. It is simple to use Git in a terminal command to add your code to a
-                    GitHub repository.</p>
-            </div>
-        </div>
-    </main>
-    <footer>
-    <div class="card-footer">
-        JulianneWagner Copyright 2019
     </div>
-</footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
-    <!-- your JavaScript file(s) go here -->
+  </nav>
+
+  <header>
+    <div class="headerArea">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div>
+              <h1>Julianne Wagner</h1>
+            </div>
+            <img src="./img/me.jpg" alt="" />
+            <h5>My Portfolio</h5>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="techArea">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 techHeader text-center">
+          <h2>Web Technologies</h2>
+        </div>
+      </div>
+      <div class="row tech1">
+
+        <div class="col-md-4 col-sm-6 firstSide">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+            class="mx-auto d-block" />
+          <h5> HTML</h5>
+        </div>
+        <div class="col-md-7 col-sm-6 techSide2">
+          <p>HTML is a scripting language for creating the base of every web page. With HTML,
+            you can implement stlye within the HTML file or directly reference a CSS file.
+            Also, JavaScript can be included to add dynamic aspects for a webpage.</p>
+        </div>
+      </div>
+      <br>
+      <div class="row tech1">
+        <div class="col-md-7 col-sm-6 techSide2">
+          <p>
+            CSS or cascading style sheets is a language to design HTML content. CSS is the
+            presentation to the user of the HTML content. CSS can either be directly referenced in an HTML file
+            with a style tag or imported with an external file tag in the
+            HTML file.
+          </p>
+        </div>
+        <div class="col-md-4 col-sm-6 firstSide">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
+            class="mx-auto d-block" />
+          <h5>CSS 3</h5>
+        </div>
+
+      </div> <br>
+      <div class="row tech1">
+
+        <div class="col-md-4 col-sm-6 firstSide ">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Javascript-shield.svg"
+            class="mx-auto d-block" />
+          <h5>JavaScript</h5>
+        </div>
+        <div class="col-md-7 col-sm-6 techSide2">
+          <p>JavaScript is a programming language that is used with HTML to create dynamic aspects of
+            a webpage. JavaScript can add animation, and interactive properties to an HTML page. JavaScript can also be
+            used to change or revise HTML and CSS content.</p>
+        </div>
+      </div> <br>
+      <div class="row tech1">
+        <div class="col-md-7 col-sm-6 techSide2">
+          <p>
+            SASS is a CSS pre-processor. It is used to write a stlye sheet for HTML content in SASS
+            and then transformed into CSS before it is rendered by a browswer. SASS is powerful due to extended
+            features like variables, nested rules, or mixins. These features allow compling CSS much easier and
+            more effienctly.
+          </p>
+        </div>
+        <div class="col-md-4 col-sm-6 firstSide">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Sass_Logo_Color.svg"
+            class="mx-auto d-block" />
+          <h5>SASS</h5>
+        </div>
+
+      </div> <br>
+      <div class="row tech1">
+
+        <div class="col-md-4 col-sm-6 firstSide ">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
+            class="mx-auto d-block" />
+          <h5>GitHub</h5>
+        </div>
+        <div class="col-md-7 col-sm-6 techSide2">
+          <p>GitHub is an online code storing, sharing, or posting website. GitHub can be used with
+            Git, a version control system. It is simple to use Git in a terminal command to add your code to a
+            GitHub repository.</p>
+        </div>
+      </div> <br>
+      <div class="row tech1">
+        <div class="col-md-7 col-sm-6 techSide2">
+          <p>Python is a high level programming language. Python is mostly used for data
+            manipulation, creating websites, and web or mobile applications. Python is popular due to the simple
+            syntax, leading more beginner programmers to learn Python and make amazing applications</p>
+        </div>
+        <div class="col-md-4 col-sm-6 firstSide">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
+            class="mx-auto d-block" />
+          <h5>Python</h5>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>
+      @Copyright by Julianne-2019
+    </p>
+  </footer>
+
+  <!-- Footer Area End -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!-- Menu Area End-->
 </body>
 
 </html>

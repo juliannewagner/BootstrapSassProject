@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css?family=Catamaran|Crete+Round&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 1em;
+  line-height: 1.6;
+  font-family: "Catamaran", Tahoma, Verdana, sans-serif;
+}
+
+nav {
+  background-color: #dd4a36 !important;
+  font-family: "Crete Round", Cambria, Georgia, serif;
+}
+nav a img {
+  height: 33px;
+  width: 48px;
+}
+nav .navbar-collapse .navbar-nav .nav-item {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+nav .navbar-collapse .navbar-nav .nav-item:hover {
+  background-color: #f07666;
+  color: #e6e6e6;
+  border-bottom: 2px solid #ffdfdb;
+}
+nav .navbar-collapse .navbar-nav .nav-item .nav-link {
+  color: #e6e6e6;
+}
+
+header {
+  min-height: 50vh;
+  width: 100%;
+  background: lightblue url("../img/header.jpg") no-repeat center;
+  background-size: cover;
+}
+header .headerArea {
+  width: 80%;
+  margin: auto auto;
+  text-align: center;
+  font-family: "Crete Round", Cambria, Georgia, serif;
+}
+header .headerArea img {
+  width: auto;
+  height: 40vh;
+  border-radius: 50%;
+  border: 4px solid #dd4a36;
+  margin: auto auto;
+  display: block;
+}
+header .headerArea div h1 {
+  padding: 10px;
+  color: black;
+  text-shadow: 3px 2px 2px #e6e6e6;
+  font-family: "Crete Round", Cambria, Georgia, serif;
+  color: #f07666;
+  font-size: 60px;
+}
+header .headerArea h5 {
+  color: #e6e6e6;
+  padding: 15px;
+  font-size: 30px;
+}
+
+.techArea {
+  padding-bottom: 15px;
+  font-family: "Catamaran", Tahoma, Verdana, sans-serif;
+}
+.techArea .container .tech1 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: 0 0 10px #816693;
+  text-align: justify;
+}
+.techArea .container .tech1 .firstSide h5 {
+  text-align: center;
+  font-family: "Crete Round", Cambria, Georgia, serif;
+  border-bottom-style: double;
+  border-color: #816693;
+}
+.techArea .container .tech1 .firstSide img {
+  height: 170px;
+  width: 175px;
+  padding: 10px;
+  text-align: center;
+  display: inline-block;
+}
+.techArea .container .techHeader {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-family: "Crete Round", Cambria, Georgia, serif;
+}
+.techArea .container .techHeader h2 {
+  color: #dd4a36;
+  border-bottom-style: double;
+  border-color: #816693;
+}
+
+.allCards {
+  width: 80%;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.allCards .card-title {
+  font-family: "Crete Round", Cambria, Georgia, serif;
+  color: #f07666;
+}
+.allCards .card-text {
+  font-family: "Catamaran", Tahoma, Verdana, sans-serif;
+  color: #4d4d4d;
+}
+.allCards .card {
+  box-shadow: 0 0 10px #816693;
+}
+.allCards .btn {
+  background-color: #cb9eeb;
+  font-family: "Catamaran", Tahoma, Verdana, sans-serif;
+  color: #4d4d4d;
+}
+.allCards .container .row .techHeader {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.allCards .container .row .techHeader h2 {
+  color: #dd4a36;
+  font-family: "Crete Round", Cambria, Georgia, serif;
+  border-bottom-style: double;
+  border-color: #816693;
+}
+
+.contactArea {
+  margin-top: 20px;
+  padding: 25px 5px 25px 5px;
+  color: #dd4a36;
+}
+.contactArea h1 {
+  font-family: "Crete Round", Cambria, Georgia, serif;
+  margin: 0;
+  padding: 0;
+  border-bottom-style: double;
+  border-color: #816693;
+  text-align: center;
+  margin-bottom: 45px;
+  text-transform: capitalize;
+  font-size: 40px;
+}
+
+.inputBox {
+  position: relative;
+  box-sizing: border-box;
+  margin-bottom: 50px;
+}
+.inputBox .inputText {
+  position: absolute;
+  font-size: 24px;
+  line-height: 50px;
+  transition: 0.5s;
+  opacity: 0.5;
+}
+.inputBox .input {
+  color: #816693;
+  font-family: "Catamaran", Tahoma, Verdana, sans-serif;
+  position: relative;
+  width: 100%;
+  height: 45px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 23px;
+  border-bottom: 1px solid #dd4a36;
+}
+.inputBox .placeHolder::before {
+  width: 100%;
+  content: attr(placeholder);
+}
+.inputBox .placeHolder:hover::before {
+  width: 0%;
+  content: "";
+}
+
+.focus .input {
+  transform: translateY(-30px);
+  opacity: 1;
+  font-family: "Catamaran", Tahoma, Verdana, sans-serif;
+  color: gray;
+}
+
+.textarea {
+  height: 100px !important;
+  color: #816693;
+}
+
+.button {
+  font-family: "Catamaran", Tahoma, Verdana, sans-serif;
+  width: 100%;
+  height: 45px;
+  border: 5px solid #dd4a36;
+  background-color: #cb9eeb;
+  color: #4d4d4d;
+}
+
+footer {
+  padding: 12px;
+  background: linear-gradient(#dd4a36, #ffdfdb);
+}
+footer p {
+  font-family: "Catamaran", Tahoma, Verdana, sans-serif;
+  color: #e6e6e6;
+  text-align: center;
+}
+
+@media only screen and (max-width: 650px) {
+  nav .navbar-collapse .navbar-nav .nav-item {
+    border-bottom: 2px solid #e6e6e6;
+    text-align: center;
+  }
+  nav .navbar-collapse .navbar-nav .nav-item:hover {
+    background-color: #f07666;
+  }
+
+  header .headerArea img {
+    width: auto;
+    height: 35vh;
+  }
+
+  .techArea .container .tech1 .techSide2 p {
+    padding: 12px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
